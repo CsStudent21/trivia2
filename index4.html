@@ -28,8 +28,14 @@
                 //PART 2
 
                 document.querySelector(".answer").addEventListener("click", function(){
-                    document.querySelector("#pizzeria").innerHTML = "Correct!";
-                    document.querySelector(".risposta").style.backgroundColor = "green";
+                    if(Text = "Pepe"){
+                        document.querySelector("#pizzeria").innerHTML = "Correct!";
+                        document.querySelector(".risposta").style.backgroundColor = "green";
+                    }
+                    else {
+                        document.querySelector("#pizzeria").innerHTML = "Incorrect!";
+                        document.querySelector(".risposta").style.backgroundColor = "red";
+                    }
                 });
                 
             });
