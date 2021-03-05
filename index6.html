@@ -33,7 +33,7 @@
                         document.querySelector(".risposta").style.backgroundColor = "green";
                     }
                     else {
-                        document.querySelector("#pizzeria").innerHTML = "Incorrect!";
+                        document.querySelector("#pizzeria").innerHTML = "Incorrect.";
                         document.querySelector(".risposta").style.backgroundColor = "red";
                     }
                 };
@@ -75,12 +75,14 @@
                 <hr>
                 <h3>
                     The name of the best pizzeria in the world 
-                    <p id = "pizzeria"></p>
                 </h3>
                 <form onsubmit="return false;">
                     <input class="risposta" type = "text">
                     <input class ="answer" type = "submit">
                 </form>
+                <h3>
+                    <p id = "pizzeria"></p> 
+                </h3>
 
             </div>
 
