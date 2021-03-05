@@ -27,7 +27,7 @@
 
                 //PART 2
 
-                document.querySelector(".answer").addEventListener("click", function(){
+                function bravo(){
                     if(document.querySelector(".risposta").value == "Pepe in Grani"){
                         document.querySelector("#pizzeria").innerHTML = "Correct!";
                         document.querySelector(".risposta").style.backgroundColor = "green";
@@ -36,7 +36,9 @@
                         document.querySelector("#pizzeria").innerHTML = "Incorrect!";
                         document.querySelector(".risposta").style.backgroundColor = "red";
                     }
-                });
+                };
+
+                document.querySelector(".answer").addEventListener("click", bravo);
                 
             });
         </script>
