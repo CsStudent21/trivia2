@@ -27,9 +27,9 @@
 
                 //PART 2
 
-                document.querySelector(".answer").addEventListener("click", function(){
+                function pizza(){
                     document.querySelector("#pizzeria").innerHTML = "Correct!";
-                    document.querySelector(".risposta").style.backgroundColor = "green";
+                    document.querySelector("#risposta").style.backgroundColor = "green";
                 });
                 
             });
@@ -69,9 +69,9 @@
                     The name of the best pizzeria in the world 
                     <p id = "pizzeria"> </p>
                 </h3>
-                <form onsubmit="return false;">
-                    <input class="risposta" type = "text">
-                    <input class ="answer" type = "submit">
+                <form onsubmit = "pizza(); return false;">
+                    <input id = "risposta" type = "text">
+                    <input type = "submit">
                 </form>
 
             </div>
